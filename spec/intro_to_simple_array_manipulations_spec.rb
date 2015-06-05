@@ -7,7 +7,7 @@ describe "manipulating arrays" do
 
     it "adds an element to the end of an array" do
       # replace the underscore with your answer
-      answer = __
+      answer = countries_in_western_africa.push(next_country)
       expect(answer.last).to eq(next_country)
     end
   end
@@ -18,7 +18,7 @@ describe "manipulating arrays" do
 
     it "adds an element to the front of an array" do
       # replace the underscore with your answer
-      answer = __
+      answer = neighborhoods_in_northwest_brooklyn.unshift(new_neighborhood)
       expect(answer).to eq(["Brooklyn Heights", "Brooklyn Yards", "Cadman Plaza", "Clinton Hill", "Downtown Brooklyn", "DUMBO"])
       expect(answer).to be_an(Array)
     end
@@ -33,7 +33,7 @@ describe "manipulating arrays" do
 
     it "removes the last element from an array and returns it as the result of the method call" do
       # replace the underscore with your answer
-      deleted_string = __
+      deleted_string = great_hits_of_the_nineties.pop
       expect(deleted_string).to eq("Losing My Religion")
     end
 
@@ -48,7 +48,7 @@ describe "manipulating arrays" do
 
     it "removes the last 2 elements in an array and returns them as the result of the method call" do
       # replace the underscore with your answer
-      answer = __
+      answer = characters_in_the_cosby_show.pop(2)
       expect(answer).to eq(characters_removed)
     end
 
@@ -62,7 +62,7 @@ describe "manipulating arrays" do
 
     it "returns the first element in the array as the result of the method call" do
       # replace the underscore with your answer
-      deleted_city = __
+      deleted_city = my_favorite_cities.shift
       expect(deleted_city).to eq("Lagos")
     end
 
@@ -77,7 +77,7 @@ describe "manipulating arrays" do
 
     it "removes and returns the first 2 elements in array" do
       # replace the underscore with your answer
-      deleted_strings = __
+      deleted_strings = ice_cream_brands.shift(2)
       expect(deleted_strings).to eq(brands_removed)
     end
 
@@ -92,7 +92,7 @@ describe "manipulating arrays" do
 
     it "adds the elements in one array to the end of a second array on which concat is called on" do
       # replace the underscore with your answer
-      expanded_array = __
+      expanded_array = ice_cream_brands.concat(new_ice_cream_brand)
       expect(expanded_array).to eq(["Blue Bell Creameries", "Ben & Jerry's", "Baskin Robbins", "Braum's", "Breyer's", "Mauds Ice Cream"])
       expect(expanded_array).to be_an(Array)
     end
@@ -108,7 +108,7 @@ describe "manipulating arrays" do
 
     it "inserts an element to the of the seventh position in list_of_esoteric_programming_languages array" do
       # replace the underscore with your answer
-      answer = __
+      answer = list_of_esoteric_programming_languages.insert(6, another_esoteric_language)
       expect(answer).to eq(["Ante", "ArnoldC", "Befunge", "Binary lambda calculus", "Chef", "GolfScript", "Malbolge", "Ook!"])
     end
 
@@ -122,7 +122,7 @@ describe "manipulating arrays" do
 
     it "returns a new array by removing duplicate values in an array" do
       # replace the underscore with your answer
-      new_array = __
+      new_array = captain_planet_and_the_planeteers.uniq
       expect(new_array).to eq(["Captain Planet", "Gaia", "Kwame", "Gi", "Linka", "Wheeler"])
       expect(captain_planet_and_the_planeteers).to_not eq(new_array)
     end
@@ -134,7 +134,7 @@ describe "manipulating arrays" do
 
     it "returns a new array that is a combination of two or more arrays" do
       # replace the underscore with your answer
-      new_array = __
+      new_array = private_colleges_in_newyork.push(military_academies_in_newyork).flatten
       expect(new_array.count).to eq(8)
     end
   end
@@ -144,7 +144,7 @@ describe "manipulating arrays" do
 
     it "deletes all items in array that are equal to the item passed as an argument" do
        # replace the underscore with your answer
-      deleted_name =  __
+      deleted_name =  most_popular_boy_names_2014.delete("Jack")
       expect(deleted_name).to eq("Jack")
     end
 
@@ -162,7 +162,7 @@ describe "manipulating arrays" do
 
     it "delete item at the third position in most_popular_girl_names_2014 a" do
       # replace the underscore with your answer
-      deleted_name = __
+      deleted_name = most_popular_girl_names_2014.delete_at(2)
       expect(deleted_name).to eq("Sophia")
     end
 
